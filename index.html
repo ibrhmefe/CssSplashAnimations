@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="appear.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+
+<style>
+    body{
+    background: #ddd;
+}
+.kutu{
+    float: left;
+    width: 200px;
+    height: 170px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.kutu > div{
+    float: left;
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px 40px;
+    border-radius: 5px;
+}
+</style>
+
+<script>
+    $(document).ready(function () {
+        var fonk;
+        $(".kutu > div").click(function(){
+            fonk = $(this).attr("class");
+            $(this).attr("class", "tiklanan");
+            setInterval(function(){
+                $(".tiklanan").attr("class", fonk);
+            }, 50);
+        });
+    });
+</script>
+<body>
+    <div class="kutu">
+        fadeInDownBig
+        <div class="appear-animation appear-animation-visible fadeInDownBig"></div>
+    </div>
+    <div class="kutu">
+        fadeInUpBig
+    <div class="appear-animation appear-animation-visible fadeInUpBig"></div>
+    </div>
+    <div class="kutu">
+        fadeInLeftBig
+        <div class="appear-animation appear-animation-visible fadeInLeftBig"></div>
+    </div>
+    <div class="kutu">
+        fadeInRightBig
+        <div class="appear-animation appear-animation-visible fadeInRightBig"></div>
+    </div>
+    <div class="kutu">
+        wobble
+        <div class="appear-animation appear-animation-visible wobble"></div>
+    </div>
+    <div class="kutu">
+        flash
+        <div class="appear-animation appear-animation-visible flash"></div>
+    </div>
+    <div class="kutu">
+        shake
+        <div class="appear-animation appear-animation-visible shake"></div>
+    </div>
+    <div class="kutu">
+        bounce
+        <div class="appear-animation appear-animation-visible bounce"></div>
+    </div>
+    <div class="kutu">
+        tada
+        <div class="appear-animation appear-animation-visible tada"></div>
+    </div>
+    <div class="kutu">
+        swing
+        <div class="appear-animation appear-animation-visible swing"></div>
+    </div>
+    <div class="kutu">
+        wiggle
+        <div class="appear-animation appear-animation-visible wiggle"></div>
+    </div>
+    <div class="kutu">
+        pulse
+        <div class="appear-animation appear-animation-visible pulse"></div>
+    </div>
+    <div class="kutu">
+        fadeIn
+        <div class="appear-animation appear-animation-visible fadeIn"></div>
+    </div>
+    <div class="kutu">
+        fadeInUp
+        <div class="appear-animation appear-animation-visible fadeInUp"></div>
+    </div>
+    <div class="kutu">
+        fadeInDown
+        <div class="appear-animation appear-animation-visible fadeInDown"></div>
+    </div>
+    <div class="kutu">
+        fadeInLeft
+        <div class="appear-animation appear-animation-visible fadeInLeft"></div>
+    </div>
+    <div class="kutu">
+        fadeInRight
+        <div class="appear-animation appear-animation-visible fadeInRight"></div>
+    </div>
+    <div class="kutu">
+        bounceIn
+        <div class="appear-animation appear-animation-visible bounceIn"></div>
+    </div>
+    <div class="kutu">
+        bounceInUp
+        <div class="appear-animation appear-animation-visible bounceInUp"></div>
+    </div>
+    <div class="kutu">
+        bounceInDown
+        <div class="appear-animation appear-animation-visible bounceInDown"></div>
+    </div>
+    <div class="kutu">
+        bounceInLeft
+        <div class="appear-animation appear-animation-visible bounceInLeft"></div>
+    </div>
+    <div class="kutu">
+        bounceInRight
+        <div class="appear-animation appear-animation-visible bounceInRight"></div>
+    </div>
+    <div class="kutu">
+        rotateIn
+        <div class="appear-animation appear-animation-visible rotateIn"></div>
+    </div>
+    <div class="kutu">
+        rotateInUpLeft
+        <div class="appear-animation appear-animation-visible rotateInUpLeft"></div>
+    </div>
+    <div class="kutu">
+        rotateInDownLeft
+        <div class="appear-animation appear-animation-visible rotateInDownLeft"></div>
+    </div>
+    <div class="kutu">
+        rotateInUpRight
+        <div class="appear-animation appear-animation-visible rotateInUpRight"></div>
+    </div>
+    <div class="kutu">
+        rotateInDownRight
+        <div class="appear-animation appear-animation-visible rotateInDownRight"></div>
+    </div>
+</body>
+</html>
